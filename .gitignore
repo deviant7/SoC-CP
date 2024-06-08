@@ -398,3 +398,4 @@ FodyWeavers.xsd
 *.sln.iml
 .vscode/tasks.json
 STL pair.exe
+*.exe
