@@ -26,4 +26,7 @@ auto it=s.find("apple"); //log(n)
   s.erase("anuj");
   print(s);
  }
+/*unordered_sets have the same differences
+as b/w maps and unordered_maps
 
+one ques solved on unord_set named ques_on_unord_sets*/
