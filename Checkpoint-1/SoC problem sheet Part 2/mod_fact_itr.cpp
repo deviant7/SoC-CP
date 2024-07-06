@@ -6,7 +6,7 @@ using namespace std;
 map<int,long long> m;
 
 long long factorial(int n){
-    auto it=m.lower_bound(n);
+    auto it=m.lower_bound(n);//or m.find();
     if(it!=m.end()){
         return it->second;
     }
