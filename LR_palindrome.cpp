@@ -12,19 +12,19 @@ int main(){
         while(Q--){
             int l,r;
             cin>>l>>r;
+            if(l==r) cout<<"yes"<<"\n";
+            else{
             unordered_map<char,int> m;
             for(int i=l-1;i<r;i++){
                 m[s[i]]++;
             }
-            bool b=false;
+            int count_odd=0;
             for(auto& pr: m){
-                if(pr.second%2!=0){
-                    cout<<"NO"<<endl;
-                    b=true;
-                    break;
-                }
+                if(pr.second%2!=0)count_odd++;
             }
-            if(!b)cout<<"YES"<<endl;
+                if(count_odd<=1)cout<<"YES"<<endl;
+                else cout<<"NO"<<endl;
+            }
         }
     }
 }
